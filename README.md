@@ -38,7 +38,7 @@ The .exe file is available in the [exe_file](https://github.com/Kuan0113/ONIP_IS
 2. Click **"Calculate Points"**.  
 3. Instantly view your **total OINP points**.
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 The scoring factors are based on the Ontario Immigrant Nominee Program (OINP) - Employer Job Offer: International Student Stream, as detailed on the official [Ontario government website](https://www.ontario.ca/page/oinp-employer-job-offer-international-student-stream).
 
 Note: This tool may not always reflect the latest updates from the Ontario government. Please verify the scoring criteria directly on the official website for any changes.
