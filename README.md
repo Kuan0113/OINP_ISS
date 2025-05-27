@@ -30,7 +30,7 @@ To package the tool into an executable for Windows:
 pip install pyinstaller
 pyinstaller --onefile --windowed scoring_calculator.py
 ```
-The .exe file is available in the `exe_file` folder. You can download and run it directly without needing Python installed.
+The .exe file is available in the [exe_file](https://github.com/Kuan0113/ONIP_ISS/exe_file) folder. You can download and run it directly without needing Python installed.
 
 
 ## 📑 How It Works  
