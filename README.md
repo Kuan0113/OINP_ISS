@@ -21,7 +21,7 @@ pip install tk
 ```
 3️⃣ **Run the script:**  
 ```bash
-python scoring_calculator.py
+python ONIP.py
 ```
 
 ## 📦 Convert to `.exe`  
