@@ -27,10 +27,10 @@ python ONIP.py
 ## 📦 Convert to `.exe`  
 To package the tool into an executable for Windows:  
 ```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed scoring_calculator.py
+pip install auto-py-to-exe
+auto-py-to-exe
 ```
-The .exe file is available in the [exe_file](https://github.com/Kuan0113/ONIP_ISS/exe_file) folder. You can download and run it directly without needing Python installed.
+The .exe file is available in the [exe_file](https://github.com/Kuan0113/ONIP_ISS/tree/main/exe_file) folder. You can download and run it directly without needing Python installed.
 
 
 ## 📑 How It Works  
