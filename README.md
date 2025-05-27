@@ -1,4 +1,4 @@
-# 🏆 ONIP_ISS - OINP International Student Stream Scoring Calculator  
+# 🏆 OINP_ISS - OINP International Student Stream Scoring Calculator  
 
 This Python-based **OINP Scoring Calculator** helps international students assess their eligibility for the **Ontario Immigrant Nominee Program (OINP) - International Student Stream**. Users can easily select criteria using dropdown menus, and the tool automatically calculates their total score based on employment, education, language ability, and regional factors.
 
@@ -21,7 +21,7 @@ pip install tk
 ```
 3️⃣ **Run the script:**  
 ```bash
-python ONIP.py
+python OINP.py
 ```
 
 ## 📦 Convert to `.exe`  
@@ -30,7 +30,7 @@ To package the tool into an executable for Windows:
 pip install auto-py-to-exe
 auto-py-to-exe
 ```
-The .exe file is available in the [exe_file](https://github.com/Kuan0113/ONIP_ISS/tree/main/exe_file) folder. You can download and run it directly without needing Python installed.
+The .exe file is available in the [exe_file](https://github.com/Kuan0113/OINP_ISS/tree/main/exe_file) folder. You can download and run it directly without needing Python installed.
 
 
 ## 📑 How It Works  
