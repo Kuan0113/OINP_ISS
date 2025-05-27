@@ -30,7 +30,8 @@ To package the tool into an executable for Windows:
 pip install pyinstaller
 pyinstaller --onefile --windowed scoring_calculator.py
 ```
-The `.exe` will be available in the **`dist/`** folder.
+The .exe file is available in the `exe_file` folder. You can download and run it directly without needing Python installed.
+
 
 ## 📑 How It Works  
 1. Select your **job offer details, education, language ability, location**, etc.  
