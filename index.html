@@ -5,10 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OINP Scoring Calculator</title>
 <style>
-  body { font-family: Arial, sans-serif; margin: 2rem; }
+  body { font-family: Arial, sans-serif; margin: 2rem; text-align: center; }
+  h1 { color: #24292e; }
   label { display: block; margin-top: 1rem; }
   select { width: 300px; padding: 0.5rem; margin-top: 0.3rem; }
-  button { margin-top: 1.5rem; padding: 0.7rem 1.2rem; font-size: 1rem; }
+  button, a.button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  button:hover, a.button:hover { background-color: #024ea2; }
   #result { margin-top: 1.5rem; font-weight: bold; font-size: 1.2rem; }
 </style>
 </head>
@@ -17,7 +31,13 @@
 
 <div id="calculator"></div>
 
+<!-- Buttons -->
 <button onclick="calculatePoints()">Calculate Points</button>
+<a class="button" href="https://kuan0113.github.io/" target="_blank">Home</a>
+<a class="button" href="https://www.ontario.ca/page/oinp-employer-job-offer-international-student-stream#section-5" target="_blank">
+  View Scoring Factors
+</a>
+
 <div id="result">Total Points: 0</div>
 
 <script>
