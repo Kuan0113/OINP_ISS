@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OINP Scoring Calculator</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 2rem; }
+  label { display: block; margin-top: 1rem; }
+  select { width: 300px; padding: 0.5rem; margin-top: 0.3rem; }
+  button { margin-top: 1.5rem; padding: 0.7rem 1.2rem; font-size: 1rem; }
+  #result { margin-top: 1.5rem; font-weight: bold; font-size: 1.2rem; }
+</style>
+</head>
+<body>
+<h1>OINP Scoring Calculator</h1>
+
+<div id="calculator"></div>
+
+<button onclick="calculatePoints()">Calculate Points</button>
+<div id="result">Total Points: 0</div>
+
+<script>
+// Define categories and options
+const categories = {
+  "Job Offer NOC TEER": ["NOC TEER 0 or 1", "NOC TEER 2 or 3", "NOC TEER 4 or 5"],
+  "Occupational Category": ["Category 0, 2, 3", "Category 7", "Category 1, 9", "Category 4, 8", "Category 5, 6"],
+  "Job Offer Wage": ["$40/hr+", "$35-39.99/hr", "$30-34.99/hr", "$25-29.99/hr", "$20-24.99/hr", "<$20/hr"],
+  "Work/Study Permit": ["Valid work/study permit", "No valid permit"],
+  "Job Tenure": ["6+ months in position", "<6 months or not working"],
+  "Earnings History": ["$40k+ in a year", "<$40k in a year"],
+  "Highest Education": ["PhD", "Masters", "Bachelors", "Grad Diploma", "Undergrad Diploma", "Trades Certificate", "Less than college"],
+  "Field of Study": ["STEM/Health/Trades", "Business/Admin/Social", "Arts/Humanities"],
+  "Canadian Education Experience": ["More than one credential", "One credential"],
+  "Language Ability": ["CLB 9+", "CLB 8", "CLB 7", "CLB 6 or lower"],
+  "Official Languages": ["2 Official Languages", "1 Official Language"],
+  "Job Location": ["Northern Ontario", "Outside GTA (except Northern)", "Inside GTA (except Toronto)", "Toronto"],
+  "Study Location": ["Northern Ontario", "Outside GTA (except Northern)", "Inside GTA (except Toronto)", "Toronto"]
+};
+
+const pointsMapping = {
+  "Job Offer Wage": [10, 8, 7, 6, 5, 0],
+  "Job Offer NOC TEER": [10, 8, 0],
+  "Occupational Category": [10, 7, 5, 4, 3],
+  "Work/Study Permit": [10, 0],
+  "Job Tenure": [3, 0],
+  "Earnings History": [3, 0],
+  "Highest Education": [10, 8, 6, 6, 5, 5, 0],
+  "Field of Study": [12, 6, 0],
+  "Canadian Education Experience": [10, 5],
+  "Language Ability": [10, 6, 4, 0],
+  "Official Languages": [10, 5],
+  "Job Location": [10, 8, 3, 0],
+  "Study Location": [10, 8, 3, 0]
+};
+
+// Generate dropdowns
+const calculatorDiv = document.getElementById('calculator');
+const selectedValues = {};
+
+for (const category in categories) {
+  const label = document.createElement('label');
+  label.innerText = category;
+
+  const select = document.createElement('select');
+  categories[category].forEach(option => {
+    const opt = document.createElement('option');
+    opt.value = option;
+    opt.innerText = option;
+    select.appendChild(opt);
+  });
+
+  selectedValues[category] = select;
+
+  calculatorDiv.appendChild(label);
+  calculatorDiv.appendChild(select);
+}
+
+// Calculate points
+function calculatePoints() {
+  let totalPoints = 0;
+  for (const category in selectedValues) {
+    const select = selectedValues[category];
+    const selectedOption = select.value;
+    const index = categories[category].indexOf(selectedOption);
+    totalPoints += pointsMapping[category][index];
+  }
+  document.getElementById('result').innerText = `Total Points: ${totalPoints}`;
+}
+</script>
+</body>
+</html>
