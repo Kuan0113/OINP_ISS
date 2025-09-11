@@ -37,7 +37,7 @@ auto-py-to-exe
 ```
 The .exe file is available in the [exe_file](https://github.com/Kuan0113/OINP_ISS/tree/main/exe_file) folder. You can download and run it directly without needing Python installed.
 
-##🌐 HTML Version
+## 🌐 HTML Version
 
 Open [index.html](https://kuan0113.github.io/OINP_ISS/) in any modern web browser to use the HTML/JS version of the calculator. No installation is required.
 
