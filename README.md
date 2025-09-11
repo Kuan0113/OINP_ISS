@@ -2,14 +2,19 @@
 
 This Python-based **OINP Scoring Calculator** helps international students assess their eligibility for the **Ontario Immigrant Nominee Program (OINP) - International Student Stream**. Users can easily select criteria using dropdown menus, and the tool automatically calculates their total score based on employment, education, language ability, and regional factors.
 
+- [**Python Version:**](#-Installation) A Tkinter-based GUI for Windows and Python environments.  
+- [**HTML Version:**](#-HTML-Version) A web-based version that can be run in any modern browser.  
+- **Executable (.exe) Version:** Ready-to-run Windows executable for users without Python.
+
 ## 🚀 Features  
 ✅ **User-friendly Tkinter GUI** for easy interaction  
 ✅ **Dropdown menus** for quick selection  
 ✅ **Instant point calculation** based on user input  
 ✅ **Prevents immediate closure** when run as an executable  
 ✅ **Supports Windows and Python environments**  
+✅ **HTML version available** for browser-based usage  
 
-## 🛠 Installation  
+## 🛠 Installation
 1️⃣ **Clone the repository:**  
 ```bash
 git clone https://github.com/your-username/ONIP_ISS.git
@@ -32,6 +37,9 @@ auto-py-to-exe
 ```
 The .exe file is available in the [exe_file](https://github.com/Kuan0113/OINP_ISS/tree/main/exe_file) folder. You can download and run it directly without needing Python installed.
 
+##🌐 HTML Version
+
+Open [index.html](https://kuan0113.github.io/OINP_ISS/) in any modern web browser to use the HTML/JS version of the calculator. No installation is required.
 
 ## 📑 How It Works  
 1. Select your **job offer details, education, language ability, location**, etc.  
